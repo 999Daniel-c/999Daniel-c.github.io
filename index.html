@@ -1,1 +1,32 @@
-<html><body><h1>hello world</h1></body></html>
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<body>
+<form action="{% url 'cr' %}" align="center" method="post">
+    {% csrf_token %}
+    Checkbox:
+    <input type="checkbox" value="第一个" name="c1">第一个
+    <input type="checkbox" value="第二个" name="c1">第二个
+    <input type="checkbox" value="第三个" name="c2">第三个
+    <input type="checkbox" value="第四个" name="c3">第四个
+    <br>
+    Radio:
+    <input type="radio" value="第一个" name="r1">第一个
+    <input type="radio" value="第二个" name="r1">第二个
+    <input type="radio" value="第三22222个" name="r1">第三个
+    <input type="text", value="hdjfdjfawfwefd" , name="input">
+    <br>
+    <input type="submit" , value="提交">
+</form>
+ 
+ 
+</body>
+ 
+</html>
